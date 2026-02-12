@@ -1,0 +1,144 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Body */
+body {
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Header / Hero */
+#hero {
+  background: url('../assets/hero.jpg') no-repeat center center/cover;
+  text-align: center;
+  padding: 80px 20px;
+  color: #fff;
+}
+
+#hero img#logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#whatsapp-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #25D366; /* WhatsApp green */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #222;
+}
+
+/* About */
+#about p {
+  text-align: center;
+  font-size: 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Services */
+#services ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#services li {
+  background: #f1f1f1;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Gallery */
+#gallery-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+#gallery-images img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Contact */
+#contact p, #contact a {
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+
+  #services ul {
+    flex-direction: column;
+  }
+}
